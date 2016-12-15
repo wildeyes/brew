@@ -36,6 +36,7 @@ class XcodeRequirement < Requirement
     message = <<-EOS.undent
       A full installation of Xcode.app#{version} is required to compile this software.
       Installing just the Command Line Tools is not sufficient.
+      (If you have xcode installed, try updating it.)
     EOS
     if MacOS.version >= :lion
       message + <<-EOS.undent
